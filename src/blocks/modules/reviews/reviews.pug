@@ -1,0 +1,60 @@
+section.reviews
+	.container
+		.reviews__top
+			h2.reviews__title
+				| What Our
+				br
+				| Customers Say
+
+			.reviews__summary
+				span.reviews__score 4.9
+				img.reviews__stars(src="img/svg/stars-yellow.svg", alt="Rating stars")
+				span.reviews__count based on 2452+ reviews
+
+		.reviews__slider-wrap
+			button.reviews__nav.reviews__prev(type="button", aria-label="Previous slide")
+				span ←
+
+			.swiper.reviews__slider
+				.swiper-wrapper
+					.swiper-slide
+						article.review-card
+							img.review-card__photo(src="img/review-1.png", alt="Customer photo")
+							.review-card__body
+								.review-card__head
+									h3.review-card__name Brooklyn Simmons
+									img.review-card__rating(src="img/svg/stars-yellow.svg", alt="5 stars")
+								p.review-card__text
+									| “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+									| Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+									| sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+									| do amet sint. Velit officia”
+
+					.swiper-slide
+						article.review-card
+							img.review-card__photo(src="img/review-2.png", alt="Customer photo")
+							.review-card__body
+								.review-card__head
+									h3.review-card__name Imam White
+									img.review-card__rating(src="img/svg/stars-yellow.svg", alt="5 stars")
+								p.review-card__text
+									| “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+									| Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+									| sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+									| do amet sint. Velit officia”
+
+					.swiper-slide
+						article.review-card
+							img.review-card__photo(src="img/review-1.png", alt="Customer photo")
+							.review-card__body
+								.review-card__head
+									h3.review-card__name Jane Cooper
+									img.review-card__rating(src="img/svg/stars-yellow.svg", alt="5 stars")
+								p.review-card__text
+									| “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+									| Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+									| sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+									| do amet sint. Velit officia”
+
+			button.reviews__nav.reviews__next(type="button", aria-label="Next slide")
+				span →

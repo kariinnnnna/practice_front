@@ -2,10 +2,17 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "Alowishus"
 
 block content
 	include ../blocks/modules/header/header
+
+	main.main
+		include ../blocks/modules/hero/hero
+		include ../blocks/modules/explore/explore
+		include ../blocks/modules/order/order
+		include ../blocks/modules/reviews/reviews
+
 	include ../blocks/modules/footer/footer
 
 block scripts

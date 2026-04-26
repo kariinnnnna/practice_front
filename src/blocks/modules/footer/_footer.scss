@@ -18,7 +18,8 @@
     margin-bottom: 80px;
   }
 
-  &__brand {
+  &__brand,
+  &__locations {
     width: 558px;
   }
 
@@ -33,25 +34,37 @@
   }
 
   &__description,
-  &__text,
-  &__contact-link {
-    font-size: 30px;
+  &__text {
+    margin: 0;
+    max-width: 558px;
+
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 34px;
     color: $color-text;
   }
 
-  &__contact {
+  &__contact-link {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: $color-text;
+  }
+
+  &__contact,
+  &__subscribe {
     width: 413px;
     justify-self: end;
   }
 
   &__title {
-    margin-bottom: 34px;
+    margin: 0 0 34px;
+
     font-size: 40px;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.1;
     color: $color-dark;
+    white-space: nowrap;
   }
 
   &__contact-list {
@@ -110,10 +123,6 @@
     opacity: 0.7;
   }
 
-  &__locations {
-    width: 558px;
-  }
-
   &__more {
     display: inline-flex;
     align-items: center;
@@ -137,11 +146,6 @@
 
   &__more:hover {
     opacity: 0.7;
-  }
-
-  &__subscribe {
-    width: 413px;
-    justify-self: end;
   }
 
   &__form {
@@ -258,13 +262,19 @@
   }
 
   .footer__title {
-    font-size: 36px;
+    font-size: 34px;
+    white-space: normal;
   }
 
   .footer__description,
-  .footer__text,
+  .footer__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .footer__contact-link {
     font-size: 22px;
+    line-height: 1.45;
   }
 }
 

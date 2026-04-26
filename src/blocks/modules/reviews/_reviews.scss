@@ -18,14 +18,20 @@
 }
 
 .reviews__summary {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "score stars"
+    "score count";
+  column-gap: 20px;
+  row-gap: 6px;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 
 .reviews__score {
+  grid-area: score;
+
   font-size: 40px;
   line-height: 40px;
   font-weight: 600;
@@ -33,15 +39,21 @@
 }
 
 .reviews__stars {
+  grid-area: stars;
+
+  display: block;
   width: 120px;
   height: auto;
 }
 
 .reviews__count {
+  grid-area: count;
+
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   color: $color-text;
+  white-space: nowrap;
 }
 
 .reviews__slider-wrap {

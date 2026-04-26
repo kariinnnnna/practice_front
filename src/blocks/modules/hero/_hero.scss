@@ -104,8 +104,8 @@
   top: 391px;
   left: 43px;
 
-  width: 272px;
-  min-height: 140px;
+  width: 292px;
+  height: 140px;
   padding: 20px 24px;
 
   border-radius: 24px;
@@ -125,7 +125,7 @@
 }
 
 .hero__rating-text {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: $color-text;
@@ -288,9 +288,14 @@
 
     width: 100%;
     max-width: 280px;
+    height: auto;
     min-height: auto;
     margin: -70px auto 0;
     padding: 18px 20px;
+  }
+
+  .hero__rating-stars {
+    margin-bottom: 10px;
   }
 
   .hero__rating-stars img {
@@ -298,6 +303,7 @@
   }
 
   .hero__rating-text {
+    width: auto;
     font-size: 16px;
     line-height: 1.4;
   }

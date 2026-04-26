@@ -1,21 +1,41 @@
 header.header
-	.container.header__container
-		a.header__logo(href="#")
-			img(src="img/logo.png", alt="Alowishus logo")
+  .container
+    .header__wrapper
+      a.header__logo(href="#")
+        img(src="img/logo.png", alt="Alowishus")
 
-		.header__right
-			nav.header__nav(aria-label="Основная навигация")
-				ul.header__menu
-					li.header__item
-						a.header__link(href="#") Cafe Menu
-					li.header__item
-						a.header__link(href="#") About Us
-					li.header__item
-						a.header__link(href="#") Find Us
-					li.header__item
-						a.header__link(href="#") Alowishus Catering
+      nav.header__nav
+        ul.header__list
+          li.header__item
+            a.header__link(href="#") Cafe Menu
+          li.header__item
+            a.header__link(href="#") About Us
+          li.header__item
+            a.header__link(href="#") Find Us
+          li.header__item
+            a.header__link(href="#") Alowishus Catering
 
-			a.header__cart(href="#", aria-label="Cart")
-				img(src="img/svg/cart.svg", alt="Cart")
+      .header__actions
+        button.header__burger(type="button" aria-label="Open menu")
+          span
+          span
+          span
 
-			a.header__button.btn.btn--dark(href="#") Buy gift vouchers
+        button.header__cart(type="button" aria-label="Open cart")
+          img(src="img/svg/cart.svg", alt="Cart")
+
+        a.header__btn(href="#") Buy Gift Vouchers
+
+    .header__mobile
+      nav.header__mobile-nav
+        ul.header__mobile-list
+          li.header__mobile-item
+            a.header__mobile-link(href="#") Cafe Menu
+          li.header__mobile-item
+            a.header__mobile-link(href="#") About Us
+          li.header__mobile-item
+            a.header__mobile-link(href="#") Find Us
+          li.header__mobile-item
+            a.header__mobile-link(href="#") Alowishus Catering
+          li.header__mobile-item
+            a.header__mobile-link.header__mobile-link--button(href="#") Buy Gift Vouchers

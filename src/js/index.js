@@ -1,5 +1,6 @@
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
+import "./import/modules";
 
 const reviewsSlider = document.querySelector(".reviews__slider");
 

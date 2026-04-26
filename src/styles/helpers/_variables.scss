@@ -7,10 +7,11 @@ $color-bg: #f3f4f5;
 $color-white: #ffffff;
 
 $transition-base: 0.3s ease;
-$shadow-soft: 0px 30px 60px 0px rgba(163, 168, 178, 0.15);
-$shadow-medium: 0px 32px 62px 0px rgba(163, 168, 178, 0.3);
-$shadow-icon: 0px 12px 30px 0px rgba(205, 209, 214, 0.28);
-$shadow-icon-dark: 0px 12px 30px 0px rgba(205, 209, 214, 0.35);
+
+$shadow-soft: 0 30px 60px rgba(163, 168, 178, 0.15);
+$shadow-medium: 0 32px 62px rgba(163, 168, 178, 0.3);
+$shadow-icon: 0 12px 30px rgba(205, 209, 214, 0.28);
+$shadow-icon-dark: 0 12px 30px rgba(205, 209, 214, 0.35);
 
 $desktop: 1399px;
 $laptop: 1199px;
